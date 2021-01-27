@@ -1,0 +1,30 @@
+.menu{
+    display: flex;
+    list-style: none;
+    padding-top: 10px;
+    height: 100%;
+    width: 100%;
+}
+.menu li{
+    padding: 8px 16px;
+    background-color: white;
+    height: 100%;
+    flex-grow: 1;
+}
+.country {
+    position: relative;
+}
+.menu .test{
+    list-style: none;
+    opacity: 0;
+    padding: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.menu .country:hover{
+    border-top: 1px solid blue; 
+}
+.menu .country:hover .test{
+    opacity: 1;
+}

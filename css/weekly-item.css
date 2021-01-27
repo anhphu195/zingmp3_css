@@ -1,0 +1,30 @@
+body{
+  font-family: Arial, sans-serif;
+}
+.weekly-item{
+  display: flex;
+  padding: 12px 0;
+  align-items:center;
+  border-bottom: 1px solid #EEE;
+}
+.weekly-item .number{
+  font-size: 20px;
+  padding: 0px 10px;
+}
+.weekly-item .info{
+  flex-grow: 1;
+}
+.weekly-item .song-info{
+  margin-bottom: 10px;
+}
+
+.weekly-item .singer{
+  font-size: 13px;
+  color: #999;
+}
+
+.weekly-item .view-number{
+  font-size: 13px;
+  color: #999;
+  margin: 0px 10px;
+}

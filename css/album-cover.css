@@ -1,0 +1,74 @@
+.weekly_song{
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #EEE;
+    font-family: Arial, sans-serif;
+    text-transform: capitalize;
+}
+
+.album_cover{
+    height: 128px;
+    width: 128px;
+    background-color: #ffffff;
+    background-image: url("http://via.placeholder.com/128x200");
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    display: flex;
+}
+.album_cover .background_grandient{
+    width: 100%;
+    display: flex;
+    transition: all 0.3s;
+}
+
+.background_grandient .overlay{
+    height: 100%;
+    display: flex;
+    color: #ffffff;
+    padding: 10px;
+    box-sizing: border-box;
+    align-items: flex-end;
+}
+.info{
+    flex-grow: 1;
+    padding: 0 10px;
+    font-size: 16px;
+}
+.info .song_info{
+    padding-bottom: 5px;
+    font-size: 1.5em;
+}
+.info .singer{
+    padding-bottom: 5px;
+    opacity: 0.5;
+}
+.info .view{
+    padding-bottom: 5px;
+    opacity: 0.5;
+}
+.background_grandient .play_button{
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    padding-left: 10px;
+    transition: all 0.5ms;
+}
+
+.album_cover .play_button img{
+    height: 30px;
+    width: 30px;
+    transform: scale(0);
+    transition: all 0.3s;
+    opacity: 0;
+}
+
+.album_cover:hover .play_button img{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.album_cover:hover .background_grandient{
+    background: linear-gradient(0deg, rgba(2,0,36,0.8715861344537815) 0%, rgba(249,249,249,0.10407913165266103) 100%);
+}
